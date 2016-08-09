@@ -1,7 +1,26 @@
 body {
-	background: url("../images/sfondoHome.jpg");
+	background: #19273d;
+	height: 1000px;
+	font-family: 'Ubuntu', sans-serif;
 }
 
-.navbar-default{
-    height: 77px;
+.navbar-default {
+    height: 100px;
+    background: #19273d;
+    border-bottom: 2px solid #263854;
+}
+
+.containerNavBar {
+	border: 2px solid #263854;
+    width: 1197px;
+    height: 70px;
+    margin-top: 15px;
+}
+
+.Name {
+    border: 2px solid #263854;
+    width: 170px;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 30px;
 }
