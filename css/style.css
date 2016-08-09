@@ -1,43 +1,23 @@
 body {
 	background: #19273d;
-	height: 10000px;
+	height: 100px;
 	font-family: 'Ubuntu', sans-serif;
 }
 
-.navbar-default {
-    height: 100px;
-    background: #19273d;
-    border-bottom: 2px solid #263854;
-}
+.affix {
+      top: 0;
+      width: 100%;
+  }
 
-.containerNavBar {
-	border: 2px solid #263854;
-    width: 1197px;
-    height: 70px;
-    margin-top: 15px;
-}
+.container-fluid1 {
+	margin-top: -21px;
+    padding-left: 24px;
+    background-color: #F44336;
+    color: #fff;
+    height: 200px;
+  }
 
-.nameDiv {
-    border: 2px solid #263854;
-    width: 259px;
-    height: 50px;
-    margin-top: 10px;
-    margin-left: 30px;
-    font-size: 40px;
-}
-
-#name {
-	font-size: 23px;
-	color: white;
-	text-align: left;
-}
-
-.imageWebDeveloper {
-    width: 50px;
-    height: 50px;
-    background-image: url("../images/webDevIcon.png");
-    background-size: cover;
-    background-position: center;
-    float: right;
-    margin-top: -35px;
+.container-fluid2 {
+  	
+    height: 1000px;
 }
