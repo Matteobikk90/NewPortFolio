@@ -6,4 +6,12 @@ $(document).ready(function(){
     
     });
 
+  $("div#panel").hide();
+
+    $("#projectsChapter").click( function() {
+        $('#panel').slideToggle();
+        $(this).html($(this).html() == 'Close Projects' ? 'Open Projects' : 'Close Projects');                    
+    });
+
+
 });
