@@ -6,11 +6,11 @@ $(document).ready(function(){
     
     });
 
-  $("div#panel").hide();
+  $("#project1, #project2, #project3, #project4").hide();
 
     $("#projectsChapter").click( function() {
-        $('#panel').slideToggle();
-        $(this).html($(this).html() == 'Close Projects' ? 'Open Projects' : 'Close Projects');                    
+        $('#project1, #project2, #project3, #project4').slideToggle();
+        $(this).html($(this).html() == 'Hide Projects' ? 'Show Projects' : 'Hide Projects');                    
     });
 
 
