@@ -16,13 +16,14 @@ $(document).ready(function(){
 
     $("#skills").click(function(){
      $(this).animate({
-    color: "green",
-    backgroundColor: "rgb( 20, 20, 20 )"
+    color: "#19273d",
+    backgroundColor: "#F44336"
   });
      $(this).animate({
-    color: "red",
-    backgroundColor: "white"
+    color: "#F44336",
+    backgroundColor: "#19273d"
   });
+     $(this).effect( "shake" );
 });
 
 });
