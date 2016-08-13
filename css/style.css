@@ -20,6 +20,7 @@ body {
 .container-fluid2 {
   	height: 1000px;
   	border:1px solid grey;
+  	position: relative;
 }
 
 .navbar-nav {
@@ -60,7 +61,7 @@ body {
 	text-align: center;
 }
 
-.circle {
+div.circle {
 	width:100px;
 	height:100px;
 	border-radius:50px;
@@ -68,6 +69,7 @@ body {
 	color:#fff;
 	line-height:100px;
 	text-align:center;
-	background:#000
+	background:#000;
+	position: absolute;
 }
 
