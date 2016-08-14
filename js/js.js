@@ -1,4 +1,6 @@
 // alert("halo");
+var difficulty = 1;
+var delay = 1000; //Your delay in milliseconds
 
 $(document).ready(function(){
     /* affix the navbar after scroll below header */
@@ -27,7 +29,6 @@ $(document).ready(function(){
 });
 
     $(document).ready(function(){
-    	
     $("div[name=animate]").each(function(){
         animateDiv($(this));
     });
@@ -48,11 +49,17 @@ function makeNewPosition(){
 
 function animateDiv(c){
     var newq = makeNewPosition();
-    $(c).animate({ top: newq[0], left: newq[1] }, function(){
+    $(c).animate({ top: newq[0], left: newq[1] }, 2250 / difficulty, function(){
       animateDiv(c);        
     });
     
 };
+
+$('div[name=animate]').click(function(){
+   $(this).effect('explode');
+   console.log("explode");
+   setTimeout(function(){ window.location = "https://www.google.it/"; }, delay);
+   });
 
 
 });

@@ -18,7 +18,7 @@ body {
   }
 
 .container-fluid2 {
-  	height: 1000px;
+  	height: 700px;
   	border:1px solid grey;
   	position: relative;
 }
@@ -30,6 +30,8 @@ body {
 
 #projectsChapter {
 	font-size: 36px;
+	border:1px solid grey;
+	text-align: center;
 }
 
 #project1 {
