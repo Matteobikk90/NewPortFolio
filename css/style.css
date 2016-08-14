@@ -18,8 +18,8 @@ body {
   }
 
 .container-fluid2 {
-  	height: 700px;
-  	border:1px solid grey;
+  	height: 500px;
+  	border: 1px solid grey;
   	position: relative;
 }
 
@@ -64,86 +64,93 @@ body {
 }
 
 div.circle1 {
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	border-radius:50px;
 	font-size:20px;
 	color:#fff;
 	line-height:100px;
 	text-align:center;
-	background:blue;
+	background:url("https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/220px-HTML5_logo_and_wordmark.svg.png");
+	background-size: cover;
 	position: absolute;
 }
 
 div.circle2 {
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	border-radius:50px;
 	font-size:20px;
 	color:#fff;
 	line-height:100px;
 	text-align:center;
-	background:white;
+	background:url("http://icons.iconarchive.com/icons/graphics-vibe/developer/256/css-3-icon.png");
+	background-size: cover;	
 	position: absolute;
 }
 
 div.circle3 {
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	border-radius:50px;
 	font-size:20px;
 	color:#fff;
 	line-height:100px;
 	text-align:center;
-	background:yellow;
+	background:url("http://www.bacancytechnology.com/blog/wp-content/uploads/2014/08/rubyonrailswebapplicatondevelopment.png");
+	background-size: cover;
 	position: absolute;
 }
 
 div.circle4 {
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	border-radius:50px;
 	font-size:20px;
 	color:#fff;
 	line-height:100px;
 	text-align:center;
-	background:red;
+	background:url("http://blog.html.it/wp-content/edit.html.it_uploads/2016/01/node.png");
+	background-size: cover;
 	position: absolute;
 }
 
 div.circle5 {
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	border-radius:50px;
 	font-size:20px;
 	color:#fff;
 	line-height:100px;
 	text-align:center;
-	background:pink;
+	background:url("http://code-maven.com/img/angularjs.png");
+	background-size: cover;
 	position: absolute;
 }
 
 div.circle6 {
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	border-radius:50px;
 	font-size:20px;
 	color:#fff;
 	line-height:100px;
 	text-align:center;
-	background: purple;
+	background: url("http://www.javatpoint.com/images/javascript/javascript_logo.png");
+	background-size: cover;
 	position: absolute;
 }
 
 div.circle7 {
-	width:100px;
-	height:100px;
+	width:120px;
+	height:120px;
 	border-radius:50px;
 	font-size:20px;
 	color:#fff;
 	line-height:100px;
 	text-align:center;
-	background:orange;
+	background:url("http://www.exuberantsolutions.com/course_logo/jquery-icon.png");
+	background-size: cover;
 	position: absolute;
 }
 

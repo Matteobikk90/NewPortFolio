@@ -1,6 +1,6 @@
 // alert("halo");
-var difficulty = 1;
-var delay = 1500; //Your delay in milliseconds
+var speed = 1;
+var delay = 1000; //Your delay in milliseconds
 
 $(document).ready(function(){
     /* affix the navbar after scroll below header */
@@ -49,7 +49,7 @@ function makeNewPosition(){
 
 function animateDiv(c){
     var newq = makeNewPosition();
-    $(c).animate({ top: newq[0], left: newq[1] }, 2250 / difficulty, function(){
+    $(c).animate({ top: newq[0], left: newq[1] }, 3000 / speed, function(){
       animateDiv(c);        
     });
     
@@ -57,8 +57,50 @@ function animateDiv(c){
 
 $('div[name=animate]').click(function(){
    $(this).effect('explode');
+   console.log("explode HTML5");
+   setTimeout(function(){ window.location = "http://www.html5.com/"; }, delay);
+   
+   });
+
+$('div[name=animate]').click(function(){
+   $(this).effect('explode');
+   console.log("explode CSS3");
+   setTimeout(function(){ window.location = "http://www.css3.com/"; }, delay);
+   
+   });
+
+$('div[name=animate]').click(function(){
+   $(this).effect('explode');
    console.log("explode");
-   setTimeout(function(){ window.location = "https://www.google.it/"; }, delay);
+   setTimeout(function(){ window.location = "http://rubyonrails.org/"; }, delay);
+   
+   });
+
+$('div[name=animate]').click(function(){
+   $(this).effect('explode');
+   console.log("explode");
+   setTimeout(function(){ window.location = "https://nodejs.org/en/"; }, delay);
+   
+   });
+
+$('div[name=animate]').click(function(){
+   $(this).effect('explode');
+   console.log("explode");
+   setTimeout(function(){ window.location = "https://angularjs.org/"; }, delay);
+   
+   });
+
+$('div[name=animate]').click(function(){
+   $(this).effect('explode');
+   console.log("explode");
+   setTimeout(function(){ window.location = "https://www.javascript.com/"; }, delay);
+   
+   });
+
+$('div[name=animate]').click(function(){
+   $(this).effect('explode');
+   console.log("explode");
+   setTimeout(function(){ window.location = "https://jquery.com/"; }, delay);
    
    });
 
