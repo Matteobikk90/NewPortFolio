@@ -1,6 +1,6 @@
 // alert("halo");
 var speed = 1;
-var delay = 1000; //Your delay in milliseconds
+var delay = 3000; //Your delay in milliseconds
 
 $(document).ready(function(){
     /* affix the navbar after scroll below header */
