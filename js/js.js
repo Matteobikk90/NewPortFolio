@@ -1,6 +1,6 @@
 // alert("halo");
 var difficulty = 1;
-var delay = 1000; //Your delay in milliseconds
+var delay = 1500; //Your delay in milliseconds
 
 $(document).ready(function(){
     /* affix the navbar after scroll below header */
@@ -59,7 +59,9 @@ $('div[name=animate]').click(function(){
    $(this).effect('explode');
    console.log("explode");
    setTimeout(function(){ window.location = "https://www.google.it/"; }, delay);
+   
    });
 
-
 });
+
+
