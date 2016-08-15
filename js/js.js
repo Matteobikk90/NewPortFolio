@@ -1,6 +1,8 @@
 // alert("halo");
 var speed = 1;
-var delay = 3000; //Your delay in milliseconds
+var delay = 2500; //Your delay in milliseconds
+var mouseX = 0;
+var mouseY = 0;
 
 $(document).ready(function(){
     /* affix the navbar after scroll below header */
@@ -13,19 +15,14 @@ $(document).ready(function(){
     $("#projectsChapter").click( function() {
         $('#project1, #project2, #project3, #project4, #project5').slideToggle();
         $(this).html($(this).html() == 'Hide Projects' ? 'Show Projects' : 'Hide Projects'); 
-        // console.log("working");                   
+        console.log("working");                   
     });
 
-    $("#skills").click(function(){
-     $(this).animate({
-    color: "#19273d",
-    backgroundColor: "#F44336"
+    $("#skillsbtn").click(function(){
+     $("#skills").animate({
+    color: "#F44336"
   });
-     $(this).animate({
-    color: "#F44336",
-    backgroundColor: "#19273d"
-  });
-     $(this).effect( "shake" );
+     $("#skills").effect("shake");
 });
 
     $(document).ready(function(){
@@ -49,60 +46,77 @@ function makeNewPosition(){
 
 function animateDiv(c){
     var newq = makeNewPosition();
-    $(c).animate({ top: newq[0], left: newq[1] }, 3000 / speed, function(){
+    $(c).animate({ top: newq[0], left: newq[1], right: newq[2], bottom: newq[3] }, 3000 / speed, function(){
       animateDiv(c);        
     });
     
 };
 
-$('div[name=animate]').click(function(){
+$('.circle1').click(function(){
    $(this).effect('explode');
    console.log("explode HTML5");
    setTimeout(function(){ window.location = "http://www.html5.com/"; }, delay);
    
    });
 
-$('div[name=animate]').click(function(){
+$('.circle2').click(function(){
    $(this).effect('explode');
    console.log("explode CSS3");
    setTimeout(function(){ window.location = "http://www.css3.com/"; }, delay);
    
    });
 
-$('div[name=animate]').click(function(){
+$('.circle3').click(function(){
    $(this).effect('explode');
    console.log("explode");
    setTimeout(function(){ window.location = "http://rubyonrails.org/"; }, delay);
    
    });
 
-$('div[name=animate]').click(function(){
+$('.circle4').click(function(){
    $(this).effect('explode');
    console.log("explode");
    setTimeout(function(){ window.location = "https://nodejs.org/en/"; }, delay);
    
    });
 
-$('div[name=animate]').click(function(){
+$('.circle5').click(function(){
    $(this).effect('explode');
    console.log("explode");
    setTimeout(function(){ window.location = "https://angularjs.org/"; }, delay);
    
    });
 
-$('div[name=animate]').click(function(){
+$('.circle6').click(function(){
    $(this).effect('explode');
    console.log("explode");
    setTimeout(function(){ window.location = "https://www.javascript.com/"; }, delay);
    
    });
 
-$('div[name=animate]').click(function(){
+$('.circle7').click(function(){
    $(this).effect('explode');
    console.log("explode");
    setTimeout(function(){ window.location = "https://jquery.com/"; }, delay);
    
    });
+
+$(document).mousemove(function(e){
+   mouseX = e.pageX;
+   mouseY = e.pageY; 
+});
+
+// cache the selector
+var follower = $("#movingDiv");
+var xp = 0, yp = 0;
+var loop = setInterval(function(){
+    // change 12 to alter damping higher is slower
+    xp += (mouseX - xp) / 12;
+    yp += (mouseY - yp) / 12;
+    follower.css({left:xp, top:yp}); 
+
+}, 30);
+
 
 });
 

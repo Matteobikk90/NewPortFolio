@@ -19,9 +19,15 @@ body {
 
 .container-fluid2 {
   	height: 500px;
-  	border: 1px solid grey;
+  	border: 1px solid #080808;
   	position: relative;
   	overflow: hidden;
+}
+
+.container-fluid-welcome{
+	height: 700px;
+	border: 1px solid #080808;
+	text-align: center;
 }
 
 .navbar-nav {
@@ -29,10 +35,26 @@ body {
     margin: 0;
 }
 
+#h1Home, #h2Home, #h3Home, #pHome {
+	color:white;
+}
+
+#pHome {
+	font-size: 26px;
+}
+
+#movingDiv {
+	border: 1px solid grey;
+	height: 35px;
+	width: 35px;
+	position : absolute;
+}
+
 #projectsChapter {
 	font-size: 36px;
-	border:1px solid grey;
+	border:1px solid #080808;
 	text-align: center;
+	color:#080808;
 }
 
 #project1 {
@@ -62,6 +84,7 @@ body {
 
 #skills {
 	text-align: center;
+	color:#080808;
 }
 
 div.circle1 {
@@ -154,4 +177,12 @@ div.circle7 {
 	background-size: cover;
 	position: absolute;
 }
+
+/*#btnHome {
+    border-radius: 50px;
+    background-color:#080808;;
+    padding: 20px; 
+    width: 150px;
+    height: 150px; 
+}*/
 
