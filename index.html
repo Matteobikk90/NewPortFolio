@@ -8,7 +8,7 @@
 	<!-- CSS -->
 
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
     
     <!-- Scripts -->
@@ -23,40 +23,90 @@
 <body>
 
 <!-- Header -->
+
+<div id="container">
+
 <header class="container-fluid1"">
-<br>
+
+  <br>
+
   <h1>Matteo Soresini</h1>
+
   <h3>Front-End & Back-End Developer</h3>
   
   <p>Italian, 25 years old, technology fan, creative, sportsman.</p>
+
 </header>
 
 <!-- Nav Bar -->
-<nav class="navbar navbar-inverse">
-  <ul class="nav navbar-nav">
-    <li class="active"><a href="#">Home</a></li>
-    <li id="skillsbtn"><a href="#skillsChapter">Skills</a></li>
-    <li><a href="#projectsChapter">Projects</a></li>
-    <li><a href="#contactChapter">Contact</a></li>
-  </ul>
+
+<nav class="navbar navbar-default navbar-fixed-top"">
+         
+  <div class="container-fluid">
+       
+    <div class="navbar-header">
+      
+           <button id="ChangeToggle" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        
+        <div id="navbar-hamburger">
+          
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+
+        </div>
+
+        <div id="navbar-close" class="hidden">
+         
+          <span class="glyphicon glyphicon-remove"></span>
+
+        </div>
+
+           </button>
+
+            <a id="logoRight" href="#">
+
+              <img id="iconsSize" src="img/icons/.png">
+
+            </a>
+
+    </div>
+
+         
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#"><b>Start</b></a></li>
+        <li class="active"><a href="#skillsChapter"><b>Skills</b></a></li>
+        <li class="active"><a href=""><b>Projects</b></a></li>
+        <li class="active"><a href=""><b>Contact</b></a></li>
+      </ul>
+
+    </div>
+
+  </div>
+
 </nav>
+
 
 <!-- Home -->
 
 <div class="container-fluid-welcome"">
 <div id="movingDiv">
-<!-- <br><br><br>
+<br><br><br>
   <h1 id="h1Home">Welcome </h1>
   <h2 id="h2Home">to my</h2>
   <h3 id="h3Home">online PortFolio</h3>
 
   <p id="pHome">I am an Italian guy, I am 25 years old with a good English (used to live 3 years il London and 1 in Sydney) and Spanish (1 year in Barcelona) knowledge. As a junior developer I am currently looking for a job and I have a Web Developer Certificate that I took in UK on March 2016. The school is called General Assembly and is situated in the centre of London. A three-month coding bootcamp where i learnt the following tools and languages: Ruby, Ruby on Rails, CSS3/SASS, HTML5/HAML, SQL, PostgreSQL, Sinatra, JavaScript/jQuery, AJAX, AngularJS, Heroku, TDD, AWS and GitHub.
-The course also provided experience of working in an Agile environment.</p> -->
+The course also provided experience of working in an Agile environment.</p>
 </div>
 </div>
 <br><br>
 
 <!-- Skills -->
+
 <div class="container-fluid2" id="skillsChapter">
   <br>
   <h1 id="skills">Skills</h1>
@@ -71,6 +121,7 @@ The course also provided experience of working in an Agile environment.</p> -->
 <br><br><br>
 
 <!-- Projects -->
+
 <div id="projectsChapter">Show Projects</div>
 <div id="project1">Project 1</div>
 <br>
@@ -82,7 +133,7 @@ The course also provided experience of working in an Agile environment.</p> -->
 <br>
 <div id="project5">Project 5</div>
 
-
+</div>
     
 </body>
 </html>

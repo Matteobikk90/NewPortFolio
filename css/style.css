@@ -1,7 +1,12 @@
 body {
 	background: #19273d;
 	height: 100px;
-	font-family: 'Ubuntu', sans-serif;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+#container {
+	width: 100%;
+	height: 100%;
 }
 
 .affix {
@@ -10,31 +15,44 @@ body {
   }
 
 .container-fluid1 {
-	margin-top: -21px;
     padding-left: 24px;
     background-color: #F44336;
     color: #fff;
     height: 200px;
-  }
+    width: 100%;
+    margin-top: 51px;
+}
 
 .container-fluid2 {
-  	height: 500px;
+  	max-width: 1500px;
+  	width: 100%;
+  	min-height: 100%;
+  	height: 1500px;
   	border: 1px solid #080808;
   	position: relative;
   	overflow: hidden;
 }
 
 .container-fluid-welcome{
-	height: 700px;
+    max-width: 1500px;
+    min-height: 1500px;
+    width: 100%;
+	height: 100%;
+	margin: 0 auto;
 	border: 1px solid #080808;
-	text-align: center;
 	position: relative;
 	overflow: hidden;
+}
+
+.navbar-inverse {
+    background-color: #222;
+    border-color: #080808;
 }
 
 .navbar-nav {
     float: right;
     margin: 0;
+    display: block;
 }
 
 #h1Home, #h2Home, #h3Home, #pHome {
@@ -42,13 +60,14 @@ body {
 }
 
 #pHome {
-	font-size: 26px;
+	font-size: 12px;
 }
 
 #movingDiv {
 	border: 1px solid grey;
-	height: 35px;
-	width: 35px;
+	width: 33,3333%;
+	height: 600px;
+	max-width: 500px;
 	position: absolute;
 	overflow: hidden;
 }
@@ -61,7 +80,10 @@ body {
 }
 
 #project1 {
-	height: 500px;
+	min-height: 500px;
+	max-width: 1500px;
+	width: 100%;
+	height: 33,3333%;
   	border: 10px solid grey;
 }
 

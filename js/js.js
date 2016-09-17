@@ -3,6 +3,8 @@ var speed = 1;
 var delay = 2500; //Your delay in milliseconds
 var mouseX = 0;
 var mouseY = 0;
+var xp = 0;
+var yp = 0;
 
 $(document).ready(function(){
     /* affix the navbar after scroll below header */
@@ -24,6 +26,11 @@ $(document).ready(function(){
   });
      $("#skills").effect("shake");
 });
+
+    $('#ChangeToggle').click(function() {
+    $('#navbar-hamburger').toggleClass('hidden');
+    $('#navbar-close').toggleClass('hidden');  
+  });
 
     $(document).ready(function(){
     $("div[name=animate]").each(function(){
@@ -108,7 +115,6 @@ $(document).mousemove(function(e){
 
 // cache the selector
 var follower = $("#movingDiv");
-var xp = 0, yp = 0;
 var loop = setInterval(function(){
     // change 12 to alter damping higher is slower
     xp += (mouseX - xp) / 12;
